@@ -51,3 +51,22 @@ void filtradoDescRec(T *arreglo, uint N, uint pos){
         }
     }
 }
+
+/* Parte d) */
+
+void insertarenHeap(int dato, heap_t heap){
+    heap.tope++;
+    heap.arreglo[heap.tope] = dato;
+    filtradoAscRec(heap.arreglo, heap.tope);
+}
+
+void eliminarMinHeap(heap_t heap){
+    if(heap.tope > 0){
+        heap.arreglo[1] = heap.arreglo[heap.tope];
+        heap.tope--;
+    }
+    if(heap.tope > 0){
+        filtradoDescRec(heap.arreglo, heap.tope, 1);
+    }
+}
+
