@@ -1,5 +1,5 @@
 /* e7bp10 */
-/* Good memory use matrix */
+/* matriz con buen uso de memoria */
 
 struct celda{
     uint *nrofila, *nrocol;
