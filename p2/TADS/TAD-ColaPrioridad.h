@@ -49,6 +49,10 @@ void liberarCola(Tcola &cp);
 //    está en la posición i / 2.
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
+// Para dicha implementacion hacen falta dos esenciales algoritmos a la hora de ingresar
+void filtradoAscendente(Tcola &cp);
+void filtradoDescendiente(Tcola &cp); // este gasta mas recursos debido a que maneja mas posibilidades de saltos.
+
 struct nodoCp{
     int elem;
     int prio;
