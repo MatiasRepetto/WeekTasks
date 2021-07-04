@@ -94,27 +94,3 @@ void liberarCP(ColaPrio &cp){
     cp->fin = NULL;
     delete cp;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
