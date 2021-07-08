@@ -18,6 +18,15 @@ void eliminarenset(int e, Tset &s);
 // Elimina el conjunto entero y libera la memoria del mismo.
 void liberarset(Tset &s);
 
+// Devuelve un set con la disyuncion de dos conjuntos c1 y c2
+Tset disyuncion(Tset c1, Tset c2);
+
+// Devuelve un set con la conjuncion de dos cunjuntos c1 y c2
+Tset conjuncion(Tset c1, Tset c2);
+
+// Devuelve un set con la diferencia c1 - c2
+Tset diferencia(Tset c1, Tset c2);
+
 // Posibles implementaciones de estructura.
 
 // Arreglo booleanos para set ACOTADOS!!
